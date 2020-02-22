@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body translate="no" onload="_l='t';">
+    <h1 id="title">
+        Formulario de encuesta
+    </h1>
+    <p id="description">Gracias por tomarse el tiempo de ver mi formulario</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <form id="survey-form">
+                    <div id="name">
+                        <label for="exampleInputname1" id="name-lebel">Nombre</label>
+                        <input type="nombre" class="form-control" aria-describedby="emailHelp"
+                            placeholder="Ingrese su Nombre" required>
+                    </div>
+                    <div id="email">
+                        <label for="exampleInputname1" id="email-label">Correo</label>
+                        <input type="nombre" class="form-control" aria-describedby="emailHelp"
+                            placeholder="Ingrese su Correo" required>
+                    </div>
+                    <div id="number">
+                        <label for="exampleInputname1" id="number-label">Años (opcional)</label>
+                        <input type="number" name="Años" min="10" max="99" class="form-control"
+                            aria-describedby="emailHelp" placeholder="Ingrese su edad" required>
+                    </div>
+                    <div id="dropdowun">
+                        <label for="exampleFormControlSelect1">¿Que opción describe mejor tu rol
+                            actual?</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Seleccione</option>
+                            <option>Estudiante</option>
+                            <option>Trabaja de tiempo completo</option>
+                            <option>Aprendiz de tiempo completo</option>
+                            <option>Prefiero no decir</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p>¿Recomendarías este formulario a un amigo?</p>
+                        <label>
+                            <div>
+                                <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                                    checked="">Definitivamente
+                        </label>
+                    </div>
+                    <div>
+                        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Tal
+                        vez</label>
+                    </div>
+                    <div>
+                        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">No
+                        estoy segur@</label>
+                    </div>
+            </div>
+            <div>
+                <p>¿Cuál es la característica favoritade este formulario?</p>
+                <select id="most-like" name="mostLike" class="form-control" required="">
+                    <option disabled="" selected="" value="">Seleccione una opción</option>
+                    <option value="challenges">Los botones</option>
+                    <option value="projects">El fondo de hora de aventura</option>
+                    <option value="community">Sus opciones de respuesta</option>
+                    <option value="openSource">Sus colores</option>
+                </select>
+            </div>
+            <div class="form">
+                <p>
+                    ¿Que te gustaría ver mejorado?
+                    <span class="clue">(Marque todo lo que considere)</span>
+                </p>
+                <div>
+                    <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Las
+                        preguntas</label>
+                </div>
+                <div>
+                    <label>
+                        <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">las
+                        respuestas</label>
+                </div>
+                <div>
+                    <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">La
+                        visualización</label>
+                </div>
+                <div>
+                    <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox">El
+                        contenido</label>
+                </div>
+                <div>
+                    <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">El
+                        fondo</label>
+                </div>
+                <div>
+                    <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">Los
+                        colores</label>
+                </div>
+                <div>
+                    <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox">Las
+                        imágenes</label>
+                </div>
+                <div>
+                    <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox">Los
+                        botones</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <p>¿Alguna sugerencia o comentario?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Deje sus comentarios aquí..."></textarea>
+            </div>
+            <button id="submit" type="submit" class="btn btn-primary btn-outline-secondary btn-block btn btn-light">Enviar</button>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
